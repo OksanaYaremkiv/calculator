@@ -1,0 +1,42 @@
+<html>
+
+<body>
+  <div class="container">
+    <header>JAVASCRIPT CALCULATOR</header>
+    <div class="screen">
+      <h1 id="mainScreen">0</h1>
+    </div>
+    <table>
+      <tr>
+        <td><button value="7" id="7" onclick="InputSymbol(7)">7</button></td>
+        <td><button value="8" id="8" onclick="InputSymbol(8)">8</button></td>
+        <td><button value="9" id="9" onclick="InputSymbol(9)">9</button></td>
+        <td><button onclick="DeleteLastSymbol()">c</button></td>
+      </tr>
+      <tr>
+        <td><button value="4" id="4" onclick="InputSymbol(4)">4</button></td>
+        <td><button value="5" id="5" onclick="InputSymbol(5)">5</button></td>
+        <td><button value="6" id="6" onclick="InputSymbol(6)">6</button></td>
+        <td><button value="/" id="104" onclick="InputSymbol(104)">/</button></td>
+      </tr>
+      <tr>
+        <td><button value="1" id="1" onclick="InputSymbol(1)">1</button></td>
+        <td><button value="2" id="2" onclick="InputSymbol(2)">2</button></td>
+        <td><button value="3" id="3" onclick="InputSymbol(3)">3</button></td>
+        <td><button value="*" id="103" onclick="InputSymbol(103)">*</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button value="0" id="0" onclick="InputSymbol(0)">0</button></td>
+        <td><button value="-" id="102" onclick="InputSymbol(102)">-</button></td>
+        <td><button value="+" id="101" onclick="InputSymbol(101)">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="ClearScreen()">clear</button></td>
+        <td colspan="2"><button onclick="CalculateTotal()">=</button></td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>
