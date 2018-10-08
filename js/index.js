@@ -1,11 +1,11 @@
-var number = "",
+let number = "",
   total = 0,
   regexp = /[0-9]/,
   mainScreen = document.getElementById("mainScreen");
 
 function InputSymbol(num) {
-  var cur = document.getElementById(num).value;
-  var prev = number.slice(-1);
+  const cur = document.getElementById(num).value;
+  const prev = number.slice(-1);
   if (!regexp.test(prev) && !regexp.test(cur)) {
     console.log("Two math operators not allowed after each other ;)");
     return;
